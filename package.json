@@ -1,0 +1,21 @@
+{
+  "name": "express-crud-cli",
+  "version": "0.0.1",
+  "description": "Express CRUD cli",
+  "main": "./lib/index.js",
+  "bin": {
+    "ecc": "./bin/ecc.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "author": "Ivan Lopatkin <jsonik7@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "fs-extra": "^8.0.1",
+    "mustache": "^3.0.1",
+    "pluralize": "^7.0.0"
+  }
+}
