@@ -13,6 +13,8 @@ In index.js you need connect api file for express
     // APIs
     require('./api/v1')(app);   Where 'v1' version you api
 
+Now you can use next syntax, call this in you project folder
+
     ecc [options] [command]
     
     Options:
