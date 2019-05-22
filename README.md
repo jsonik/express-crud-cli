@@ -11,26 +11,30 @@ Simple CRUD generator for express. At moment support only MongoDB with [Mongoose
     ecc [options] [command]
     
     Options:
-    -V, --version        output the version number
+    -V, --version        Output the version number
     -f, --file <name>    Model file name. Only needed if model name and file name is different, and file name include symbols like _ or -
     -a, --api <version>  Api version (default v1)
-    -h, --help           output usage information
+    -h, --help           Output usage information
 
     Commands:
-    generate|g <model>   model - Model name
+    generate|g <model>   Model - Model name
 
 express-crud-cli generate next folder structure
     
     Structure:
+    <version> - api version, default value 'v1', but you can change with -a options
+    
     - api
-    -- version
+    -- <version>
     --- index.js
     - controllers
     -- <version>
-    --- <model_controller>
+    --- <model_controller>.js
     - routes
     -- <version>
-    --- <model_router>
+    --- <model_router>.js
     - db
-    -- crud.js
-    -- mongo-crud.js
+    -- crud.js                  Short crud function with response                 
+    -- mongo-crud.js            Promisified Mongoose api
+  
+## Example
