@@ -8,6 +8,11 @@ Simple CRUD generator for express. At moment support only MongoDB with [Mongoose
     
 ## Usage
 
+In index.js you need connect api file for express
+       
+    // APIs
+    require('./api/v1')(app);   Where 'v1' version you api
+
     ecc [options] [command]
     
     Options:
@@ -47,7 +52,4 @@ In project you have next structure
     
     Use ecc g User to create route, controller, and api for this model
     
-In index.js you need set this
-       
-    // APIs
-    require('./api/v1')(app);   Where 'v1' version you api
+
