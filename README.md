@@ -51,7 +51,9 @@ In project you have next structure
     -models
     -- user.js
     -index.js
-    
-    Use ecc g User to create route, controller, and api for this model
+ 
+ To generate crud use this command
+ 
+    ecc g User
     
 
