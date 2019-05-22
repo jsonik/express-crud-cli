@@ -8,12 +8,12 @@ Simple CRUD generator for express. At moment support only MongoDB with [Mongoose
     
 ## Usage
 
-In index.js you need connect api file for express
+In index.js you need connect api file for express:
        
     // APIs
     require('./api/v1')(app);   Where 'v1' version you api
 
-Now you can use next syntax, call this in you project folder
+Now you can use next syntax, call this in you project folder:
 
     ecc [options] [command]
     
@@ -26,7 +26,7 @@ Now you can use next syntax, call this in you project folder
     Commands:
     generate|g <model>   Model - Model name
 
-express-crud-cli generate next folder structure
+express-crud-cli generate next folder structure:
     
     Structure:
     <version> - api version, default value 'v1', but you can change with -a options
@@ -46,13 +46,13 @@ express-crud-cli generate next folder structure
   
 ## Example
 
-In project you have next structure
+In project you have next structure:
     
-    -models
+    - models
     -- user.js
-    -index.js
+    - index.js
  
- To generate crud use this command
+ To generate crud use this command:
  
     ecc g User
     
