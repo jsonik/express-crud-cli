@@ -38,3 +38,16 @@ express-crud-cli generate next folder structure
     -- mongo-crud.js            Promisified Mongoose api
   
 ## Example
+
+In project you have next structure
+    
+    -models
+    -- user.js
+    -index.js
+    
+    Use ecc g User to create route, controller, and api for this model
+    
+In index.js you need set this
+       
+    // APIs
+    require('./api/v1')(app);   Where 'v1' version you api
