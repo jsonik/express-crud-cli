@@ -1,6 +1,6 @@
 {
   "name": "express-crud-cli",
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "Express CRUD cli",
   "main": "./lib/index.js",
   "bin": {
@@ -8,6 +8,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jsonik/express-crud-cli"
   },
   "preferGlobal": true,
   "author": "Ivan Lopatkin <jsonik7@gmail.com>",
