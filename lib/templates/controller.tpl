@@ -4,13 +4,14 @@ const {{model}} = require('../../models/{{modelFile}}');
 let select;
 let populate = '';
 let populateParams = '';
+let sort = {};
 
 exports.list = function (req, res) {
-    crud.list(res, {{model}}, select, populate, populateParams);
+    crud.list(res, {{model}}, select, sort, populate, populateParams);
 };
 
 exports.one = function (req, res) {
-    crud.oneById(req, res, {{model}}, select, populate, populateParams);
+    crud.oneById(req, res, {{model}}, sort, select, populate, populateParams);
 };
 
 exports.create = function (req, res) {
